@@ -1,0 +1,33 @@
+﻿<Window x:Class="_300963357_rashid__Lab2.AddSnapshot"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_300963357_rashid__Lab2"
+        mc:Ignorable="d"
+        Title="AddSnapshot" Height="436.137" Width="648.578">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="162*"/>
+            <RowDefinition Height="72*"/>
+            <RowDefinition Height="73*"/>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="94*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="337*"/>
+            <ColumnDefinition Width="456*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="bookbg.png" Opacity="0.3"/>
+        </Grid.Background>
+        <Label Content="Page Number" HorizontalAlignment="Left" Height="40" Margin="104,9.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="149" FontSize="14" Background="Black" Foreground="White"/>
+        <Label Content="Book Title" HorizontalAlignment="Left" Height="40" Margin="104,11.4,0,0" Grid.Row="2" VerticalAlignment="Top" Width="149" FontSize="14" Background="Black" Foreground="White"/>
+        <TextBox x:Name="txtPageNo" Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="23.2,10.4,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" FontSize="14"/>
+        <TextBox x:Name="TxtBookTitle" Grid.Column="1" HorizontalAlignment="Left" Height="40" Margin="23.2,11.2,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" FontSize="14" IsEnabled="False"/>
+        <Button x:Name="BtnCancel" Content="Cancel" HorizontalAlignment="Left" Height="35" Margin="104,10.2,0,0" Grid.Row="3" VerticalAlignment="Top" Width="149" Foreground="#FF3256BC" Background="White" FontSize="14" Click="BtnCancel_Click"/>
+        <Button x:Name="BtnSaveSnapShot" Content="Save Snapshot" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="23.2,10.2,0,0" Grid.Row="3" VerticalAlignment="Top" Width="281" Background="#FF3256BC" Foreground="White" FontSize="14" Click="BtnSaveSnapShot_Click"/>
+        <Label Grid.ColumnSpan="2" Content="ADD SNAP SHOT" HorizontalAlignment="Left" Height="52" Margin="248,48,0,0" VerticalAlignment="Top" Width="161" Background="Black" Foreground="White" FontSize="18" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

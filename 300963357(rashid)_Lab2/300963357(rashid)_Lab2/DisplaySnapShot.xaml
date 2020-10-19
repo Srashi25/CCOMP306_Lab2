@@ -1,0 +1,34 @@
+﻿<Window x:Class="_300963357_rashid__Lab2.DisplaySnapShot"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_300963357_rashid__Lab2"
+        mc:Ignorable="d"
+        Title="DisplaySnapShot" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="314*"/>
+            <RowDefinition Height="43*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="bookbg.png" Opacity="0.3"/>
+        </Grid.Background>
+        <ListView x:Name="lstSnapshot" HorizontalAlignment="Left" Height="290" Margin="91,9.8,0,0" VerticalAlignment="Top" Width="613" Grid.Row="1">
+            <ListView.Background>
+                <SolidColorBrush Color="#7FFCFCFC" Opacity="0.71"/>
+            </ListView.Background>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Book Title" Width="200" DisplayMemberBinding="{Binding BookTitle}"/>
+                    <GridViewColumn Header="Date-Time" Width="200" DisplayMemberBinding="{Binding DateTime}"/>
+                    <GridViewColumn Header="Page Number" Width="200" DisplayMemberBinding="{Binding LastPage}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="BtnHome" Content="Go To Home" HorizontalAlignment="Left" Height="34" Margin="347,0.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="139" Background="#FF4C7DD0" Foreground="White" FontSize="14" Click="BtnHome_Click"/>
+        <Label Content="List of Snapshots" HorizontalAlignment="Left" Height="43" Margin="317,10,0,0" VerticalAlignment="Top" Width="169" Background="Black" Foreground="White" FontSize="18" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
