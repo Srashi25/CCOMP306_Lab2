@@ -1,1 +1,1 @@
-# CCOMP306_Lab2
+# COMP306_Lab2
